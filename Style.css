@@ -1,0 +1,16 @@
+table {
+    width: fit-content;
+}
+select {
+    width: 110px;
+}
+table td {
+    height: 170px;
+    border: 1px solid;
+    text-align: center;
+    padding-bottom: 20px;
+}
+.text-green {
+    color: green;
+}
+

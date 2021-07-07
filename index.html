@@ -3,179 +3,119 @@
 <head>
     <meta http-equiv="content-type" content="text/html" charset="UTF-8">
     <title>Таблица</title>
+    <title>Стили</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function sizePic() {
+            size = document.getElementById("size").value;
+            img = document.getElementById("pic");
+            img.width = 60 +48*size;
+        }
+    </script>
 </head>
 <body>
-  <form>
-<table border="2" width="1040" align="center" cellpadding="4" cellspacing="0">
-    <tr>
-        <td align="center" width="180" height="160">
-            <p><select name="Вариант">
-                <option value="s1">Вариант1</option>
-                <option value="s2">Вариант2</option>
-                <option value="s2">Вариант3</option>
-                <option value="s2">Вариант4</option>
-                <option value="s2">Вариант5</option>
-            </select>
-            <input type="submit">
-            </p>
-        </td>
-        <td width="40" height="150%" align="left">
-                <meta charset="UTF-8">
-                <title>Список</title>
-            <body>
-            <form>
-                <p><select name="select" size="5" multiple>
-                    <option selected value="s1">Вариант№1</option>
-                    <option value="s2">Вариант№2</option>
-                    <option value="s3">Вариант№3</option>
-                    <option value="s4">Вариант№4</option>
-                    <option value="s5">Вариант№5</option>
-                </select>
-                    <input type="Отправить" value="Отправить" size="7">
-                </p>
-            </form>
-            </body>
-        </td>
-        <td width="300" height="180" align="center">
-            <head>
-                <meta charset="UTF-8">
-                <title>Текстовое поле</title>
-            </head>
-            <body>
-            <p><b>Укажите цифру:</b> </p>
-            <p><input type="text" value="4" size="5"></p>
-            </body>
-        </td>
-        <td width="300" height="150" align="center">
-            <head>
-                <meta charset="UTF-8">
-                <title>Список</title>
-                <style>
-                   select {
-                       width: 110px;
-                   } 
-                </style>
-            </head>
-            <body>
-                <p><select name="select" size="1" multiple style="background-color: gray">
-                    <option selected>Вариант1</option>
-                    <option selected>Вариант2</option>
-                    <option selected>Вариант3</option>
-                </select></p>
-        </body>
-        </td>
-    </tr>
-    <tr>
-        <td width="300" height="150">
-            <head>
-                <meta charset="UTF-8">
-                <title>Ползунок</title>
-                <script>
-                    function sizePic() {
-                     size_pic= document.getElementById("size").value;
-                     img = document.getElementById("vini");
-                     img.width = 60 + 48*size_pic;
-                    }
-                </script>
-            </head>
-            <body>
-            <p><strong>Размер рисунка:</strong><input type="range" min="1" max="5" id="size" oninput="sizePic()" value="5"></p>
-            <p><img src="vini.jpg" alt="" id="vini" title="Винни-пух"></p>
-            </body>
-            </head>
-        </td>
-        <td width="300" height="150" align="center">
-            <head>
-                <meta charset="UTF-8">
-                <title>Teг FORM</title>
-            </head>
-            <body>
-            <button type="reset">Очистить</button>
-            </body>
-        </td>
-        <td width="300" height="150" align="center">
-            <head>
-                <meta charset="UTF-8">
-                <title>Поиск</title>
-            </head>
-            <body>
-            <form>
-                <p><input type="search" name="q" placeholder="Поиск по сайту" size="15">
-                    <input type="submit" value="Найти">
-                </p>
-            </form>
-            </body>
-        </td>
-        <td width="300" height="150">
-            <head>
-                <meta charset="UTF-8">
-                <title>Цвет</title>
-            </head>
-            <body>
-            <p>Укажите цвет фона:
-                <input type="color" name="bg" value="#ff0000">
+<form>
+    <table>
+        <tr>
+            <td>
+                <label>
+                    <select name="Вариант">
+                        <option value="s1">Вариант1</option>
+                        <option value="s2">Вариант2</option>
+                        <option value="s2">Вариант3</option>
+                        <option value="s2">Вариант4</option>
+                        <option value="s2">Вариант5</option>
+                    </select>
+                </label>
+                <input type="submit" value="Отправить">
+            </td>
+            <td>
+                <label>
+                    <select name="select" multiple>
+                        <option selected value="s1">Вариант№1</option>
+                        <option value="s2">Вариант№2</option>
+                        <option value="s3">Вариант№3</option>
+                        <option value="s4">Вариант№4</option>
+                        <option value="s5">Вариант№5</option>
+                    </select>
+                </label>
+                <label>
+                    <input type="submit" value="Отправить">
+                </label>
+            </td>
+            <td>
+                <label for="number"><b>Укажите цифру:</b></label>
+                <input type="text" size="5" id="number" minlength="1" maxlength="4">
+            </td>
+            <td>
+                <label>
+                    <select name="select" size="1" multiple style="background-color: gray">
+                        <option selected>Вариант1</option>
+                        <option selected>Вариант2</option>
+                        <option selected>Вариант3</option>
+                    </select>
+                </label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p><label for="text"><strong>Pазмер рисунка:</strong></label>
+                    <label for=size"></label><input type="range" min="1" max="5" id=size" oninput="sizePic()" value="3"></p>
+                <p><img src="vini.jpg" alt="" id="pic" title="Винни-пух"></p>
+            </td>
+            <td>
+                <button type="reset">Очистить</button>
+            </td>
+            <td>
+                <p><label><input type="search" name="q" placeholder="Поиск по сайту"></label>
+                <input type="submit" value="Найти"></p>
+            </td>
+            <td>
+                <label for=" ">Укажите цвет фона:</label>
+                <input type="color" name="bg" value="#ff0000" id=" ">
                 <input type="submit" value="Выбрать">
-            </p>
-            </body>
-
-        </td>
-    </tr>
-    <tr>
-        <td width="300" height="200" align="center">
-            <head>
-                <meta charset="UTF-8">
-                <title>Тег form</title>
-            </head>
-            <body>
-                <p><b>Укажите</b></p>
-                <p><input type="radio" name="answer" value="a1"><strong>Radio BUTTON</strong><br>
-                <p><input type="radio" name="answer" value="a2"><strong>Radio BUTTON</strong><br>
-                <p><input type="radio" name="answer" value="a3"><strong>Radio BUTTON</strong></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <form action="">
+                <h3>Укажите</h3>
+                <label><input type="radio" name="answer" value="a1" class="radio"><strong>Radio
+                    BUTTON</strong></label><br/>
+                <label><input type="radio" name="answer" value="a2" class="radio"><strong>Radio
+                    BUTTON</strong></label><br/>
+                <label><input type="radio" name="answer" value="a3" class="radio"><strong>Radio
+                    BUTTON</strong></label><br/>
+                </form>
                 <input type="submit" value="Submit" size="7">
-            </body>
-        </td>
-        <td width="300" height="200" align="center">
-            <head>
-                <meta charset="UTF-8">
-                <title>Teкстовое поле</title>
-            </head>
-            <body>
-                <p><b>Введите текст</b></p>
-                <p><textarea name="comment" id="1" cols="20" rows="2"></textarea></p>
-                <p><input type="submit"></input></p>
-            </body>
-        </td>
-        <td width="300" height="150" align="center">
-            <head>
-                <meta charset="UTF-8">
-                <title>Флажки</title>
-            </head>
-           <body>
-               <p><strong>Укажите дату</strong></p>
-               <p><input type="checkbox" name="a" value="2010">2010</p>
-               <p><input type="checkbox" name="b" value="2014">2014</p>
-               <p><input type="checkbox" name="c" value="2017">2017</p>
-               <p><input type="checkbox" name="d" value="2019">2019</p>
-               <p><input type="submit"></p>
-           </body>
-        </td>
-        <td width="300" height="150" align="center">
-            <head>
-                <meta charset="UTF-8">
-                <title>Загрузка файла</title>
-                </div>
-            </head>
-            <body>
-            <form enctype="multipart/form-data" method="post">
+            </td>
+            <td>
+                <label class="text-green" for="text"><b>Введите текст</b></label>
+                <p><textarea name="comment" id="text" cols="20" rows="2"></textarea></p>
+                <input type="submit"/>
+            </td>
+            <td>
+                <p><strong>Укажите дату</strong></p>
+                <p><label>
+                    <input type="checkbox" name="a" value="2010"><strong>2010</strong></label>
+                <br/>
+                <label>
+                    <input type="checkbox" name="b" value="2014"><strong>2014</strong></label><br/>
+                <label>
+                    <input type="checkbox" name="c" value="2017"><strong>2017</strong></label><br/>
+                <label>
+                    <input type="checkbox" name="d" value="2019"><strong>2019</strong></label><br/></p>
+                <input type="submit" value="Отправить"/>
+            </td>
+            <td>
+                <form action="">
                 <p><strong>Загрузите фотографии</strong></p>
                 <p><input type="file" name="photo" multiple accept="image/jpeg, image/*" size="10">
                     <input type="submit" value="Отправить"></p>
-                </p>
-            </form>
-            </body>
-        </td>
-    </tr>
-</table>
-  </form>
+                </form>
+            </td>
+        </tr>
+    </table>
+</form>
 </body>
 </html>
