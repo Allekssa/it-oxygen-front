@@ -1,0 +1,8 @@
+.up {
+    position: fixed;
+    right: 80px;
+    bottom: 60px;
+    padding: 5px;
+    color: #000;
+    background: cornflowerblue;
+}
