@@ -5,13 +5,6 @@
     <title>Таблица</title>
     <title>Стили</title>
     <link rel="stylesheet" href="style.css">
-    <script>
-        function sizePic() {
-            size = document.getElementById("size").value;
-            img = document.getElementById("pic");
-            img.width = 60 +48*size;
-        }
-    </script>
 </head>
 <body>
 <form>
@@ -59,8 +52,15 @@
         </tr>
         <tr>
             <td>
-                <p><label for="text"><strong>Pазмер рисунка:</strong></label>
-                    <label for=size"></label><input type="range" min="1" max="5" id=size" oninput="sizePic()" value="3"></p>
+                <script>
+                    function sizePic() {
+                        size = document.getElementById("size").value;
+                        img = document.getElementById("pic");
+                        img.width = 60 +48*size;
+                    }
+                </script>
+                <p><label for="text">Pазмер рисунка:</label>
+                    <input type="range" min="1" max="5" id=size" oninput="sizePic()" value="3"></p>
                 <p><img src="vini.jpg" alt="" id="pic" title="Винни-пух"></p>
             </td>
             <td>
@@ -71,7 +71,7 @@
                 <input type="submit" value="Найти"></p>
             </td>
             <td>
-                <label for=" ">Укажите цвет фона:</label>
+                <label for=" "><b>Укажите цвет фона:</b></label>
                 <input type="color" name="bg" value="#ff0000" id=" ">
                 <input type="submit" value="Выбрать">
             </td>

@@ -5,14 +5,44 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="main.css">
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="node_modules/normalize.css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <style>
+        .up {
+            position: fixed;
+            right: 80px;
+            bottom: 60px;
+            padding: 5px;
+            color: #000;
+            background: cornflowerblue;
+        }
+        P {
+margin-left: 974px;
+        }
+    </style>
 </head>
-<body><header>
-
-    <img src="" alt="">
-    <text>Единый центр занятости</text>
-</header>
-
+<body>
+   <header class="container">
+       <a href="/" class="logo">
+           <img src="logo.png" alt="Единый центр занятости" class="logo_img"></a>
+       <div class="phone_img"><img src="phone-square.png" alt=""></div>
+       <div class="phone"><a href=""><strong>80300 5000</strong></a></div>
+       <nav>
+           <ul class="menu_top">
+            <li><a href="" class="main"><strong>Главная</strong></a></li>
+            <li><a href="" class="service">Услуги</a></li>
+            <li><a href="" class="cabinet">Клиники и кабинеты</a></li>
+            <li><a href="" class="about">О нас</a></li>
+            <li><a href="" class="articles">Статьи</a></li>
+            <li><a href="" class="faq">FAQ</a></li>
+            <li><a href="" class="contact">Контакты</a></li>
+        </ul>
+       </nav>
+    </header>
+<div><img class="banner_img" src="layer.png" alt="Главный баннер">
+    <p align="right">Всю необходимую информацию о том, в каком центре сделать МРТ, КТ и рентген исследования, сравнить интересующие вас клиники цены на диагностику и порядок их прохождения процедур, а также записаться на исследование можно
+    по телефону 8 (812) 385-77-56<br /></p></div>
+<p><button class="up">Наверх</button></p>
 </body>
 </html>
