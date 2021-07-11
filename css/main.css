@@ -3,6 +3,8 @@
     margin-left: auto;
     margin-right: auto;
     padding: 0;
+    display: flex;
+    justify-content: space-between;
 }
 .header_right {
     display: flex;
@@ -12,13 +14,14 @@
 }
 .header {
     background-color: #43b1d2;
-    padding-bottom: 24px;
-    padding-top: 24px;
+    padding-top: 21px;
 }
 .logo {
     display: flex;
     flex-flow: wrap;
     padding-left: 15px;
+    width: 240px;
+    height: 57px;
 }
 .menu_top {
     list-style: none;
@@ -30,7 +33,7 @@
 li a{
     text-decoration: none;
     color: #494848;
-    font-size: 24px;
+    font-size: 20px;
 }
 .main {
     color: #ffffff;
@@ -42,7 +45,7 @@ li a{
     padding: 5px;
     color: #000;
     background: cornflowerblue;
-    font-size: 24px;
+    font-size: 22px;
 }
 .phone_img {
     margin: 0 18px;
