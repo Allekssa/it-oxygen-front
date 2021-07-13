@@ -97,12 +97,13 @@ li a{
 .radius {
     background-color: white;
 }
-.block {
+.icon_container__block {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: 0;
+    flex-basis: 40%;
 }
 .text {
     color: white;
@@ -110,3 +111,22 @@ li a{
     letter-spacing: 1px;
     width: 256px;
 }
+.tabs {
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+}
+.tabs_links {
+    width: 400px;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-content: flex-start;
+    justify-content: space-around;
+}
+
+
+
