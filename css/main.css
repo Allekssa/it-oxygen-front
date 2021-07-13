@@ -56,3 +56,57 @@ li a{
     color: #ffffff;
     font-size: 22px;
 }
+.background {
+    background-color: #cbd4e6;
+    width: 100%;
+}
+.container_banner {
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 0;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    align-content: stretch;
+    justify-content: space-around;
+    height: 515px;
+    background-image: url('../img/layer.png');
+}
+.banner_text {
+    letter-spacing: 2px;
+    color: #494848;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    text-align: right;
+}
+.submit {
+    background-color: transparent;
+    color: #494848;
+}
+.icon_container {
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 322px;
+    display: flex;
+    justify-content: space-between;
+}
+.radius {
+    background-color: white;
+}
+.block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+.text {
+    color: white;
+    size: 20px;
+    letter-spacing: 1px;
+    width: 256px;
+}
