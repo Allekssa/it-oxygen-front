@@ -104,8 +104,9 @@ li a{
     align-items: center;
     margin: 0;
     flex-basis: 40%;
+    text-align: center;
 }
-.text {
+.icon_text {
     color: white;
     size: 20px;
     letter-spacing: 1px;
@@ -115,23 +116,30 @@ li a{
     max-width: 1440px;
     margin-left: auto;
     margin-right: auto;
-    padding: 37px 0;
+    margin-top: 37px;
 }
 .tabs {
-    margin: 0 0 78px 0;
     display: flex;
     justify-content: flex-start;
 }
 .tabs_links {
-    width: 400px;
     list-style: none;
     display: flex;
     align-content: flex-start;
     justify-content: space-around;
-    height: 50px;
+    padding: 5px;
 }
 .tabs_links_a {
     color: #43b1d2;
+    border-color: #e8ebee;
+    text-decoration: none;
+    padding: 6px 10px;
+    text-align: center;
 }
+.tabs_body {
+    border: 1px solid #43b1d2;
+    left: 0;
+}
+
 
 
