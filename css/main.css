@@ -1,3 +1,25 @@
+@font-face {
+    font-family: Calibri;
+    src: url('css/font/Calibri/Calibri.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: Calibri bold;
+    src: url("css/font/Calibri/Calibri-Bold.ttf");
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: Calibri light;
+    src: url("css/font/Calibri/Calibri-light.ttf");
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: Calibri light ital;
+    src: url("css/font/Calibri/Calibri-Italic.ttf");
+}
 .container {
     max-width: 1440px;
     margin-left: auto;
@@ -29,11 +51,12 @@
     flex-direction: row;
     justify-content: space-between;
     width: 880px;
+    font-family: Calibri;
+    font-size: 16px;
 }
 li a{
     text-decoration: none;
     color: #494848;
-    font-size: 20px;
 }
 .main {
     color: #ffffff;
@@ -81,6 +104,11 @@ li a{
     justify-content: center;
     align-items: flex-end;
     text-align: right;
+    font-family: Calibri;
+}
+.banner_text_phone {
+    font-family: Calibri bold;
+    font-size: 24px;
 }
 .submit {
     background-color: transparent;
@@ -111,6 +139,7 @@ li a{
     size: 20px;
     letter-spacing: 1px;
     width: 256px;
+    font-family: Calibri light;
 }
 .tabs_block {
     max-width: 1440px;
@@ -135,8 +164,8 @@ li a{
     text-decoration: none;
     padding: 6px 10px;
     text-align: center;
+    font-family: Calibri bold;
 }
 .tabs_body {
     border: 1px solid #43b1d2;
-    left: 0;
 }
